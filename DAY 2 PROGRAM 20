@@ -1,0 +1,22 @@
+Product of Range
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+  int a;
+     int pr=1;
+    scanf("%d\n",&a);
+    for(int i=1;i<=a;i++)
+    {
+       
+        pr=pr*i;
+        
+    }
+    printf("Product of value is %d\n",pr);
+    return 0;
+}
