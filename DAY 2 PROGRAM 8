@@ -1,0 +1,31 @@
+
+Wall Painting
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+#include <stdio.h>
+
+int main() {
+    int L, B, l1, b1, l2, b2;
+    scanf("%d %d %d %d %d %d", &L, &B, &l1, &b1, &l2, &b2);
+    int sumL = l1 + l2;
+    int sumB = b1 + b2;
+    if (
+        (sumL <= L && b1 <= B && b2 <= B) ||
+        (sumB <= B && l1 <= L && l2 <= L) ||
+        (l1 + b2 <= L && b1 <= B && l2 <= B) ||
+        (b1 + l2 <= B && l1 <= L && b2 <= L) ||
+        (b1 + b2 <= B && l1 <= L && l2 <= L) ||
+        (l1 + l2 <= L && b1 <= B && b2 <= B)
+    )
+        printf("Raj can fix both painting\n");
+    else
+        printf("Raj cannot fix both painting\n");
+
+    return 0;
+}
