@@ -1,0 +1,17 @@
+Alice in wonderland
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   int a;
+    scanf("%d",&a);
+    int temp1=a%10;
+    int temp=a/10;
+    printf("Bird said:%d\n",a);
+    printf("Alice must go in path-%d",temp1+temp);
+    return 0;
+}
