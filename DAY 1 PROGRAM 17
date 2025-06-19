@@ -1,0 +1,26 @@
+dept repay
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+float truncate2(float value) {
+    return floor(value * 100) / 100.0;
+}
+
+int main() {
+    int p, r, t;
+    scanf("%d%d%d", &p, &r, &t);  
+    float i, a, d, f;
+    i = truncate2((p * r * t) / 100.0);
+    a = truncate2(p + i);
+    d = truncate2((i * 0.02));
+    f = truncate2(a - d);
+
+    printf("%.2f\n", i);
+    printf("%.2f\n", a);
+    printf("%.2f\n", d);
+    printf("%.2f\n", f);
+
+    return 0;
+}
