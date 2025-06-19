@@ -1,0 +1,46 @@
+Account Balance
+
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+   int a,n;
+    int deposit,salary,withdraw;
+    scanf("%d%d",&a,&n);
+    if(n==2)
+    {
+        scanf("%d",&withdraw);
+    }
+  switch(n)
+  {
+     case 1:
+          scanf("%d",&salary);
+      deposit=salary+a;
+          printf("%d",deposit);
+      break;
+     case 2:
+       if(withdraw>a)
+        {
+        printf("Insufficient Balance");
+        }
+          else
+          {
+              withdraw=a-withdraw;
+              printf("%d",withdraw);
+           }
+        break;
+     case 3:
+       printf("Invalid Input");
+        break;
+     default:
+      return 0;
+         
+  }
+    return 0;
+}
