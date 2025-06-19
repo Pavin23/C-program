@@ -1,0 +1,39 @@
+Arithmetic Calculation-case
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   int a,b;
+    char c;
+    scanf("%d\n%d\n%c\n",&a,&b,&c);
+    if(c=='+')
+    {
+        printf("Addition of two number is %.1f",(float)(a+b));
+    }
+    else if(c=='-')
+    {
+        printf("Subtraction of two number is %.1f",(float)a-b);
+    }
+    else if(c=='*')
+    {
+printf("Multiplication of two number is %.1f",(float)a*b);
+    }
+    else if(c=='/')
+    {
+printf("Division of two number is %.1f",(float)a/b);
+    }
+    else if (c=='%')
+    {
+        int j=a%b;
+        printf("Modulo of two number is %.1f",(float)j);
+    }
+    else
+    {
+printf("Invalid Input");
+    }
+    return 0;
+} 
