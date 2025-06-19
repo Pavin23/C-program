@@ -1,0 +1,22 @@
+Converting Number to String
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    char *n[]={"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+    if(a<0||a>9)
+    {
+printf("Invalid Input");
+    }
+    else
+    {
+printf("Integer is %d and String is %s",a,n[a]);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
